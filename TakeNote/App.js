@@ -18,7 +18,7 @@ export default function App() {
   const [editingMode, setEditingMode] = useState(false);
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login'>
+      <Stack.Navigator initialRouteName='CreateAccount'>
         <Stack.Screen name="Home" component={Home} options={{
           headerStyle: {
             backgroundColor: '#F8EEE2',
@@ -51,6 +51,7 @@ export default function App() {
             fontSize: 24,
             color: '#403B36',
           },
+          headerShown: false,
           // headerLeft:()=>(
             // <View style={{marginLeft: 20}}>
             //   <TouchableOpacity onPress={() => navigation.goBack()}>
